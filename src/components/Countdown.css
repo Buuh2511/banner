@@ -1,0 +1,16 @@
+.connect{
+    background-color: black;
+    display: inline;
+    padding : 0.3%;
+}
+
+a{
+    color: white;
+}
+
+.count{
+    background-color: black;
+    display: inline;
+    padding : 0.3%;
+    color: white;
+}
