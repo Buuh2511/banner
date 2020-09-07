@@ -1,26 +1,53 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Element from './components/Element';
 
+// class App extends React.PureComponent {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       step: 0,
+//       radio: 1
+//     }
+//   }
 function App() {
+  var tmp = <img src="https://ads-cdn.fptplay.net/static/banner/2019/09/9b6ddeba5b33e577c07c35d8505c6072_6872.png"></img>
+  const [step, setStep] = React.useState(0);
+  const [radio, setRadio] = React.useState(1);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {step === 0 ?
+        (
+          <div id='step0'>
+            <p>
+              <img src="https://ads-cdn.fptplay.net/static/banner/2019/07/97d8e28108d8e79cc0f354fc62df0f74_4734.png" onClick={() => setRadio(1)}></img>
+            </p>
+            <p>
+              <img src="https://ads-cdn.fptplay.net/static/banner/2019/07/3feabc942d18849da4a58a80759200d4_7993.png" onClick={() => setRadio(1)}></img>
+            </p>
+            <p>
+              <img src="https://ads-cdn.fptplay.net/static/banner/2019/07/a3e6f9530d715cceff59a090b076268e_5487.png" onClick={() => setRadio(2)}></img>
+            </p>
+            <p className="link">
+              <img src="https://ads-cdn.fptplay.net/static/banner/2019/09/2688dbaa1a995d57c857f2740322f034_8042.png" onClick={() => setStep(radio)}></img>
+            </p>
+          </div>
+        ) :
+        step === 1 ?
+          (
+            <div>
+              <Element></Element>
+            </div>
+          ) :
+          (
+            <div>
+              <h1>Thank You</h1>
+            </div>
+          )
+      }
     </div>
   );
 }
+
 
 export default App;

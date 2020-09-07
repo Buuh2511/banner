@@ -1,0 +1,26 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-image: url(https://ads-cdn.fptplay.net/static/banner/2019/10/a33c493ad61d6257a39f2787a1b5ec2a_9253.png);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    position: relative;
+}
+
+video {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+}
