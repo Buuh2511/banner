@@ -10,7 +10,7 @@ body,
 .App {
     position: relative;
     text-align: center;
-    background-image: url(https://ads-cdn.fptplay.net/static/banner/2019/11/506166cfb9872f7637adfae814a57cd8_5995.jpg);
+    /* background-image: url(https://ads-cdn.fptplay.net/static/banner/2019/11/506166cfb9872f7637adfae814a57cd8_5995.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
@@ -25,10 +25,46 @@ body,
     margin: auto;
 }
 
-#step0 {
+.step0 {
     position: absolute;
-    height: 60%;
-    top: 30%;
+    height: 100%;
     margin: auto;
     width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.radio{
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+video{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    height: 100%;
+    margin: auto;
+}
+
+.for-step1{
+    position: absolute;
+    top: 10%;
+    bottom: 0px;
+    height: 67%;
+    width: 100%;
+}
+.step2 img{
+    position: absolute;
+}
+
+.step1 img{
+    position: absolute;
 }

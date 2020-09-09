@@ -13,4 +13,20 @@ a{
     display: inline;
     padding : 0.3%;
     color: white;
+    position: relative;
+    left: 180px;
+}
+
+.change{
+    position: absolute;
+    height: 200px;
+    top: 70%;
+    margin: auto;
+    width: 100%
+}
+
+.link-img{
+    position: relative;
+    height: 30%;
+    top : 35%;
 }

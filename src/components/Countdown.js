@@ -16,15 +16,20 @@ class Countdown extends Component {
             tmp = <div className="connect">
                 <a href="https://fpt.vn/vi">Kết nối ngay</a>
             </div>
-            var tmp1 = <a href="https://fpt.vn/vi"><img src="https://ads-cdn.fptplay.net/static/banner/2019/09/5e0cbd0085067825813bff26741860e8_8996.png" width="50%" height="50%"></img></a>
+            var tmp1 =
+                <a href="https://fpt.vn/vi"><img src="https://ads-cdn.fptplay.net/static/banner/2019/09/5e0cbd0085067825813bff26741860e8_8996.png"></img></a>
+
+
         }
         else {
             var tmp2 = this.state.count + ' giây'
         }
         return (
-            <div>
+            <div className="change">
                 <p className="count">{tmp} {tmp2}</p>
-                {tmp1}
+                <div className="link-img">
+                    {tmp1}
+                </div>
             </div>
         )
     }
